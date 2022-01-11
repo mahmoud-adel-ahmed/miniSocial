@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>social</title>
+  </head>
+
+  <body>
+    <!-- ----- navabr ---- -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <h1>miniSocial</h1>
+        </div>
+        <div class="search-bar">
+          <i class="fa fa-search"></i>
+          <input type="search" placeholder="search" />
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">create</label>
+          <div class="profile-img">
+            <img src="./images/av2.png" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---- main ---- -->
+    <main>
+      <div class="container">
+        <!-- ---------left ---------- -->
+        <div class="left">
+          <a href="#" class="profile">
+            <div class="profile-img">
+              <img src="./images/av2.png" />
+            </div>
+            <div class="handle">
+              <h4>diana avi</h4>
+              <p>@dayi</p>
+            </div>
+          </a>
+          <!-- ----- end profile ------ -->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="fa fa-home"></i></span>
+              <h4>home</h4>
+            </a>
+            <a class="menu-item"
+              ><span><i class="fa fa-compass"></i></span>
+              <h4>explore</h4>
+            </a>
+            <a class="menu-item" id="notification"
+              ><span><i class="fas fa-bell"></i></span>
+              <h4>notifications</h4>
+              <div class="notification-popup">
+                <div>
+                  <div class="profile-img">
+                    <img src="./images/av2.png" />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>john doe</b> commented on your create-post</p>
+                    <small class="text-muted">one hour age</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-img">
+                    <img src="./images/av2.png" />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>john doe</b> commented on your create-post</p>
+                    <small class="text-muted">one hour age</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-img">
+                    <img src="./images/av2.png" />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>john doe</b> commented on your create-post</p>
+                    <small class="text-muted">one hour age</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-img">
+                    <img src="./images/av2.png" />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>john doe</b> commented on your create-post</p>
+                    <small class="text-muted">one hour age</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-img">
+                    <img src="./images/av2.png" />
+                  </div>
+                  <div class="notification-body">
+                    <p><b>john doe</b> commented on your create-post</p>
+                    <small class="text-muted">one hour age</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="menu-item">
+              <span><i class="fas fa-envelope"></i></span>
+              <h4>messages</h4>
+            </a>
+            <a class="menu-item">
+              <span><i class="fa fa-bookmark"></i></span>
+              <h4>bookmarks</h4>
+            </a>
+            <a class="menu-item">
+              <span><i class="fa fa-chart-line"></i></span>
+              <h4>analytics</h4>
+            </a>
+            <a class="menu-item" id="theme"
+              ><span><i class="fa fa-palette"></i></span>
+              <h4>theme</h4>
+            </a>
+            <a class="menu-item"
+              ><span><i class="fas fa-cog"></i></span>
+              <h4>settings</h4>
+            </a>
+          </div>
+          <label for="create-post" class="btn btn-primary">create post</label>
+        </div>
+        <!-- ----- middle --------- -->
+        <div class="middle">
+          <div class="stories">
+            <div class="story">
+              <div class="profile-img">
+                <img src="./images/av4.png" />
+              </div>
+              <p class="name">your story</p>
+            </div>
+            <div class="story">
+              <div class="profile-img">
+                <img src="./images/av4.png" />
+              </div>
+              <p class="name">your story</p>
+            </div>
+            <div class="story">
+              <div class="profile-img">
+                <img src="./images/av4.png" />
+              </div>
+              <p class="name">your story</p>
+            </div>
+            <div class="story">
+              <div class="profile-img">
+                <img src="./images/av4.png" />
+              </div>
+              <p class="name">your story</p>
+            </div>
+            <div class="story">
+              <div class="profile-img">
+                <img src="./images/av4.png" />
+              </div>
+              <p class="name">your story</p>
+            </div>
+          </div>
+          <!-- ------------- end of stories --- -->
+          <form class="create-post">
+            <div class="profile-img">
+              <img src="./images/av4.png" />
+            </div>
+            <input type="text" placeholder="what's on your mind, user?" />
+            <input type="submit" value="post" class="btn btn-primary" />
+          </form>
+
+          <!-- ----------- feeds ---- -->
+          <div class="feeds">
+            <!-- ------ feed start --- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-img">
+                    <img src="./images/av4.png" />
+                  </div>
+                  <div class="ingo">
+                    <h3>mark show</h3>
+                    <small class="text-muted">japan, 1 minutes age</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/handshake.jpg" />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-comment-dots"></i></span>
+                  <span><i class="fa fa-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa fa-bookmark"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/av2.png" /></span>
+                <span><img src="./images/av4.png" /></span>
+                <span><img src="./images/av2.png" /></span>
+                <p>liked by <b>hatem ganash</b> and <b>323 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>mark show</b> Lorem ipsum dolor sit amet.
+                  <span class="harsh-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comments text-muted">view all 277 comments</div>
+            </div>
+            <!-- ------ feed --- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-img">
+                    <img src="./images/av4.png" />
+                  </div>
+                  <div class="ingo">
+                    <h3>mark show</h3>
+                    <small class="text-muted">china, 1 minutes age</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/monitor.jpg" />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-comment-dots"></i></span>
+                  <span><i class="fa fa-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa fa-bookmark"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/av2.png" /></span>
+                <span><img src="./images/av4.png" /></span>
+                <span><img src="./images/av2.png" /></span>
+                <p>liked by <b>hatem ganash</b> and <b>323 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>mark show</b> Lorem ipsum dolor sit amet.
+                  <span class="harsh-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comments text-muted">view all 277 comments</div>
+            </div>
+            <!-- ------ feed --- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-img">
+                    <img src="./images/av4.png" />
+                  </div>
+                  <div class="ingo">
+                    <h3>mark show</h3>
+                    <small class="text-muted">china, 1 minutes age</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/phone.jpg" />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-comment-dots"></i></span>
+                  <span><i class="fa fa-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa fa-bookmark"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/av2.png" /></span>
+                <span><img src="./images/av4.png" /></span>
+                <span><img src="./images/av2.png" /></span>
+                <p>liked by <b>hatem ganash</b> and <b>323 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>mark show</b> Lorem ipsum dolor sit amet.
+                  <span class="harsh-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comments text-muted">view all 277 comments</div>
+            </div>
+            <!-- ------ feed --- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-img">
+                    <img src="./images/av4.png" />
+                  </div>
+                  <div class="ingo">
+                    <h3>mark show</h3>
+                    <small class="text-muted">china, 1 minutes age</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/touch-screen.jpg" />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-comment-dots"></i></span>
+                  <span><i class="fa fa-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa fa-bookmark"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/av2.png" /></span>
+                <span><img src="./images/av4.png" /></span>
+                <span><img src="./images/av2.png" /></span>
+                <p>liked by <b>hatem ganash</b> and <b>323 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>mark show</b> Lorem ipsum dolor sit amet.
+                  <span class="harsh-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comments text-muted">view all 277 comments</div>
+            </div>
+            <!-- ------ feed --- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-img">
+                    <img src="./images/av4.png" />
+                  </div>
+                  <div class="ingo">
+                    <h3>mark show</h3>
+                    <small class="text-muted">china, 1 minutes age</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/business.jpg" />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-comment-dots"></i></span>
+                  <span><i class="fa fa-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa fa-bookmark"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/av2.png" /></span>
+                <span><img src="./images/av4.png" /></span>
+                <span><img src="./images/av2.png" /></span>
+                <p>liked by <b>hatem ganash</b> and <b>323 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>mark show</b> Lorem ipsum dolor sit amet.
+                  <span class="harsh-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comments text-muted">view all 277 comments</div>
+            </div>
+            <!-- ------ feed --- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-img">
+                    <img src="./images/av4.png" />
+                  </div>
+                  <div class="ingo">
+                    <h3>mark show</h3>
+                    <small class="text-muted">china, 1 minutes age</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/contact.jpg" />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-comment-dots"></i></span>
+                  <span><i class="fa fa-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa fa-bookmark"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/av2.png" /></span>
+                <span><img src="./images/av4.png" /></span>
+                <span><img src="./images/av2.png" /></span>
+                <p>liked by <b>hatem ganash</b> and <b>323 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>mark show</b> Lorem ipsum dolor sit amet.
+                  <span class="harsh-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comments text-muted">view all 277 comments</div>
+            </div>
+            <!-- ------ feed --- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-img">
+                    <img src="./images/av4.png" />
+                  </div>
+                  <div class="ingo">
+                    <h3>mark show</h3>
+                    <small class="text-muted">china, 1 minutes age</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/couple.jpg" />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-comment-dots"></i></span>
+                  <span><i class="fa fa-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa fa-bookmark"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="./images/av2.png" /></span>
+                <span><img src="./images/av4.png" /></span>
+                <span><img src="./images/av2.png" /></span>
+                <p>liked by <b>hatem ganash</b> and <b>323 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>mark show</b> Lorem ipsum dolor sit amet.
+                  <span class="harsh-tag">#lifestyle</span>
+                </p>
+              </div>
+              <div class="comments text-muted">view all 277 comments</div>
+            </div>
+            <!-- ------ feed end --- -->
+          </div>
+        </div>
+        <!-- -------- middle end -------- -->
+
+        <!-- -------- right --------- -->
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>messages</h4>
+              <span> <i class="fa fa-edit"></i></span>
+            </div>
+            <div class="search-bar">
+              <span><i class="fa fa-search"></i></span>
+              <input type="search" placeholder="search messages" />
+            </div>
+            <!-- --------- message category ---- -->
+            <div class="category">
+              <h6 class="active">primary</h6>
+              <h6>general</h6>
+              <h6 class="message-requests">requests(7)</h6>
+            </div>
+            <!-- ---------- message start-------- -->
+            <div class="message">
+              <div class="profile-img">
+                <img src="./images/av2.png" />
+              </div>
+              <div class="message-body">
+                <h5>edem quist</h5>
+                <p class="text-bold">just woke up bro</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-img">
+                <img src="./images/av2.png" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>edem quist</h5>
+                <p class="text-bold">just woke up bro</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-img">
+                <img src="./images/av2.png" />
+              </div>
+              <div class="message-body">
+                <h5>edem quist</h5>
+                <p class="text-bold">just woke up bro</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-img">
+                <img src="./images/av2.png" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>edem quist</h5>
+                <p class="text-bold">just woke up bro</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-img">
+                <img src="./images/av2.png" />
+              </div>
+              <div class="message-body">
+                <h5>edem quist</h5>
+                <p class="text-bold">just woke up bro</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-img">
+                <img src="./images/av2.png" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>edem quist</h5>
+                <p class="text-bold">just woke up bro</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---------- messages end-------- -->
+
+          <!-- ---------- friend requests start-------- -->
+          <div class="friend-requests">
+            <h4>requests</h4>
+            <div class="request">
+              <div class="info">
+                <div class="profile-img">
+                  <img src="./images/av2.png" />
+                </div>
+                <div>
+                  <h5>hajia bintu</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">accept</button>
+                <button class="btn">decline</button>
+              </div>
+            </div>
+            <div class="request">
+              <div class="info">
+                <div class="profile-img">
+                  <img src="./images/av2.png" />
+                </div>
+                <div>
+                  <h5>hajia bintu</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">accept</button>
+                <button class="btn">decline</button>
+              </div>
+            </div>
+            <div class="request">
+              <div class="info">
+                <div class="profile-img">
+                  <img src="./images/av2.png" />
+                </div>
+                <div>
+                  <h5>hajia bintu</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">accept</button>
+                <button class="btn">decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -------- right end --------- -->
+      </div>
+    </main>
+
+    <div class="theme-customize">
+      <div class="card">
+        <h2>customize your view</h2>
+        <p class="text-muted">manage your fontsize, color, and background.</p>
+        <!-- ---------- fontsizes ----- -->
+        <div class="font-size">
+          <h4>font size</h4>
+          <div>
+            <h6>Aa</h6>
+            <div class="choose-size">
+              <span class="font-size-1"></span>
+              <span class="font-size-2"></span>
+              <span class="font-size-3 active"></span>
+              <span class="font-size-4"></span>
+              <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+        <!-- ---------- colors ----- -->
+        <div class="colors">
+          <h4>color</h4>
+          <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div>
+        <!-- ---------- bgColors ----- -->
+        <div class="background">
+          <h4>background</h4>
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="bg-1">light</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">dim</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">light out</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./all.min.js"></script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>

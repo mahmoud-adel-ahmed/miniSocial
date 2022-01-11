@@ -1,0 +1,143 @@
+// --------- theme-customization ------
+.theme-customize {
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.9rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  display: none;
+  z-index: 100;
+  .card {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: 3rem;
+    width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
+    h2 {
+      margin-bottom: 0.7rem;
+    }
+    .font-size {
+      margin-top: 5rem;
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--color-light);
+        padding: var(--search-padding);
+        border-radius: var(--card-border-radius);
+      }
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+      .choose-size {
+        background: var(--color-secondary);
+        height: 0.3rem;
+        width: 100%;
+        margin: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          background: var(--color-secondary);
+          cursor: pointer;
+        }
+        .active {
+          background: var(--color-primary);
+        }
+      }
+    }
+
+    // ------------ colors ------
+    .colors {
+      background: var(--color-white);
+      margin-top: 2rem;
+      border-radius: var(--card-border-radius);
+      padding: var(--search-padding);
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+      .choose-color {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          width: 2.2rem;
+          height: 2.2rem;
+          border-radius: 50%;
+          margin-bottom: 0.5rem;
+          cursor: pointer;
+          &:nth-of-type(1) {
+            background: hsl(252, 75%, 60%);
+          }
+          &:nth-of-type(2) {
+            background: hsl(52, 75%, 60%);
+          }
+          &:nth-of-type(3) {
+            background: hsl(352, 75%, 60%);
+          }
+          &:nth-of-type(4) {
+            background: hsl(152, 75%, 60%);
+          }
+          &:nth-of-type(5) {
+            background: hsl(202, 75%, 60%);
+          }
+        }
+        .active {
+          border: 5px solid #fff;
+        }
+      }
+    }
+    .background {
+      margin-top: 2rem;
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+      .choose-bg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        > div {
+          padding: var(--card-padding);
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+          font-weight: bold;
+          border-radius: 0.4rem;
+          cursor: pointer;
+          width: 100%;
+          span {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: 2px solid var(--color-gray);
+            margin-right: 1rem;
+          }
+        }
+        .active {
+          border: 2px solid var(--color-primary);
+        }
+        .bg-1 {
+          background: #fff;
+          color: black;
+        }
+        .bg-2 {
+          background: hsl(252, 30%, 17%);
+          color: #fff;
+        }
+        .bg-3 {
+          background: hsl(252, 30%, 10%);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

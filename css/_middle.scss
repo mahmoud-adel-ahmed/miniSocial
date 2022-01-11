@@ -1,0 +1,140 @@
+.middle {
+  .stories {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    height: 12rem;
+    .story {
+      padding: var(--card-padding);
+      border-radius: var(--card-border-radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      font-size: 0.75rem;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      &:nth-of-type(1) {
+        background: url("../images/story-1.jpg") center/cover no-repeat;
+      }
+      &:nth-of-type(2) {
+        background: url("../images/story-2.jpg") center/cover no-repeat;
+      }
+      &:nth-of-type(3) {
+        background: url("../images/story-3.jpg") center/cover no-repeat;
+      }
+      &:nth-of-type(4) {
+        background: url("../images/story-4.jpg") center/cover no-repeat;
+      }
+      &:nth-of-type(5) {
+        background: url("../images/story-6.jpg") center/cover no-repeat;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+        display: block;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+      }
+      .profile-img {
+        width: 2rem;
+        height: 2rem;
+        align-self: flex-start;
+        border: 3px solid var(--color-primary);
+      }
+      .name {
+        z-index: 2;
+      }
+    }
+  }
+  .create-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 0.7rem var(--card-padding);
+    border-radius: var(--border-radius);
+    input[type="text"] {
+      width: 100%;
+      justify-self: flex-start;
+      color: var(--color-dark);
+      margin-right: 1rem;
+      padding-left: 1rem;
+      background: transparent;
+    }
+  }
+  // ---------- feeds ------------
+  .feeds {
+    .feed {
+      padding: var(--card-padding);
+      background-color: var(--color-white);
+      border-radius: var(--card-border-radius);
+      font-size: 0.85rem;
+      margin: 1rem 0;
+      line-height: 1.5;
+      .head {
+        display: flex;
+        justify-content: space-between;
+        .user {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+      .photo {
+        border-radius: var(--card-border-radius);
+        overflow: hidden;
+        margin: 0.7rem 0;
+        height: 45vh;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .action-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.6rem;
+        span {
+          color: var(--color-primary);
+          font-size: 1.1rem;
+          margin: 0.6rem;
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+      .liked-by {
+        margin-bottom: 0.6rem;
+        display: flex;
+        span {
+          width: 1.5rem;
+          height: 1.5rem;
+          display: block;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 2px solid var(--color-white);
+          margin-left: -0.6rem;
+          &:first-of-type {
+            margin: 0;
+          }
+        }
+        p {
+          align-self: center;
+          margin-left: 0.6rem;
+        }
+      }
+      .caption {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
