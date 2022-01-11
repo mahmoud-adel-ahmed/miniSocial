@@ -30,7 +30,7 @@ main {
       .left {
         width: 3rem;
         z-index: 5;
-        top: 7rem;
+        top: 8rem;
         .profile {
           display: none;
         }
@@ -62,7 +62,7 @@ main {
     }
     .logo {
       h1 {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     .create {
@@ -88,26 +88,28 @@ main {
             }
             .notification-popup {
               position: absolute;
-              left: -20rem;
-              width: 20rem;
+              left: -17rem;
+              width: 17rem;
               padding: 0.8rem;
+              display: block;
               > div {
                 gap: 0.5rem;
               }
               &::before {
                 position: absolute;
                 top: 1.3rem;
-                left: calc(20rem - 0.6rem);
+                left: calc(17rem - 0.6rem);
                 display: block;
               }
 
               .notification-body {
                 align-self: center;
                 p {
-                  font-size: 0.7rem;
+                  font-size: 0.8rem;
+                  line-height: 1.3;
                 }
                 small {
-                  font-size: 0.7rem;
+                  font-size: 0.8rem;
                 }
               }
             }
@@ -160,17 +162,17 @@ main {
       }
       .background {
         .choose-bg {
-          gap: 1rem;
+          gap: 0.9rem;
           > div {
             padding: 0.7rem;
             span {
-              width: 0.8rem;
-              height: 0.8rem;
+              width: 0.7rem;
+              height: 0.7rem;
               margin: 0;
             }
             h5 {
-              margin-left: 0.4rem;
-              font-size: 11px;
+              margin-left: 0.3rem;
+              font-size: 10px;
             }
           }
         }

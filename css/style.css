@@ -858,7 +858,7 @@ main .container {
   main .container .left {
     width: 3rem;
     z-index: 5;
-    top: 7rem;
+    top: 8rem;
   }
   main .container .left .profile {
     display: none;
@@ -882,7 +882,7 @@ main .container {
     display: none;
   }
   nav .logo h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
   nav .create {
     margin-right: 0px;
@@ -909,9 +909,10 @@ main .container {
   }
   main .container .left .sidebar .menu-item .notification-popup {
     position: absolute;
-    left: -20rem;
-    width: 20rem;
+    left: -17rem;
+    width: 17rem;
     padding: 0.8rem;
+    display: block;
   }
   main .container .left .sidebar .menu-item .notification-popup > div {
     gap: 0.5rem;
@@ -919,7 +920,7 @@ main .container {
   main .container .left .sidebar .menu-item .notification-popup::before {
     position: absolute;
     top: 1.3rem;
-    left: calc(20rem - 0.6rem);
+    left: calc(17rem - 0.6rem);
     display: block;
   }
   main .container .left .sidebar .menu-item .notification-popup .notification-body {
@@ -928,10 +929,11 @@ main .container {
         align-self: center;
   }
   main .container .left .sidebar .menu-item .notification-popup .notification-body p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    line-height: 1.3;
   }
   main .container .left .sidebar .menu-item .notification-popup .notification-body small {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   main .container .left .active::before {
     width: 0.3rem;
@@ -974,19 +976,19 @@ main .container {
     height: 1.3rem;
   }
   .theme-customize .card .background .choose-bg {
-    gap: 1rem;
+    gap: 0.9rem;
   }
   .theme-customize .card .background .choose-bg > div {
     padding: 0.7rem;
   }
   .theme-customize .card .background .choose-bg > div span {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
     margin: 0;
   }
   .theme-customize .card .background .choose-bg > div h5 {
-    margin-left: 0.4rem;
-    font-size: 11px;
+    margin-left: 0.3rem;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

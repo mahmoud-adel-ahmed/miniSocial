@@ -123,7 +123,7 @@ bg1.addEventListener("click", () => {
   bg1.classList.add("active");
   bg2.classList.remove("active");
   bg3.classList.remove("active");
-  window.location.reload();
+  // window.location.reload();
 });
 
 //bg2
