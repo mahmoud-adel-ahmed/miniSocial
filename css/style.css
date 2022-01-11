@@ -912,7 +912,6 @@ main .container {
     left: -17rem;
     width: 17rem;
     padding: 0.8rem;
-    display: block;
   }
   main .container .left .sidebar .menu-item .notification-popup > div {
     gap: 0.5rem;
@@ -930,10 +929,10 @@ main .container {
   }
   main .container .left .sidebar .menu-item .notification-popup .notification-body p {
     font-size: 0.8rem;
-    line-height: 1.3;
+    line-height: 1.5;
   }
   main .container .left .sidebar .menu-item .notification-popup .notification-body small {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   main .container .left .active::before {
     width: 0.3rem;
